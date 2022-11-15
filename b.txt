@@ -1,0 +1,7 @@
+- hosts: localhost
+  vars:
+    my_content: "This file created using var concept"
+  tasks:
+    - name: Printing the variable vaalue
+      debug:
+        msg: "this is sample {{  my_content }}"
